@@ -21,10 +21,40 @@
 	</servlet-mapping>
 	<!-- Email registration ends here :-->
 	
+	
+	<!-- Admin Panel starts here      : -->
+	<servlet>
+		<servlet-name>AdminPanel</servlet-name>
+		<servlet-class>system.AdminPanel</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>AdminPanel</servlet-name>
+		<url-pattern>/AdminPanel.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin_Settings</servlet-name>
+		<servlet-class>system.Admin_Settings</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Admin_Settings</servlet-name>
+		<url-pattern>/Admin_Settings.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin_SuspiciousUsers</servlet-name>
+		<servlet-class>system.Admin_SuspiciousUsers</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Admin_SuspiciousUsers</servlet-name>
+		<url-pattern>/Admin_SuspiciousUsers.jsp</url-pattern>
+	</servlet-mapping>
+	      <!--  Admin Panel end here -->
+
+	
 	<servlet> 
   	<servlet-name>Login</servlet-name>
   	<servlet-class>system.Login</servlet-class>
 	</servlet>
+	
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
