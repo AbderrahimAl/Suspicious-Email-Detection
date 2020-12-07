@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Composer un E-mail</title>
-	<link rel="stylesheet" type="text/css" href="lahsen2.css">
+	<link rel="stylesheet" type="text/css" href="css/compose.css">
 </head>
 <body>
 	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>

@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Boite de réception</title>
-	<link rel="stylesheet" type="text/css" href="lahsen3.css">
+	<link rel="stylesheet" type="text/css" href="css/inbox.css">
 </head>
 <body>
 	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>

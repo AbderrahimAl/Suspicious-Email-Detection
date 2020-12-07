@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Connexion</title>
-	<link rel="stylesheet" type="text/css" href="lahsen1.css">
+	<link rel="stylesheet" type="text/css" href="css/dashbord.css">
 </head>
 <body>
 	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>
@@ -13,6 +13,6 @@
 		<a href="/Suspicious-Email-Detection/inbox.jsp" target="_self">Boîte de réception</a><br><br>
 		<a href="/Suspicious-Email-Detection/outbox.jsp" target="_self">Boîte d'envoi</a><br><br>
 	</section>
-	<img src="messsecure.jpg">
+	<img src="images/messsecure.jpg">
 </body>
 </html>
