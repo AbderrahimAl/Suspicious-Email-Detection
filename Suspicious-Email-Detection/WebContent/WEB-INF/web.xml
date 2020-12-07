@@ -10,6 +10,14 @@
 		<url-pattern>/Register.jsp</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<servlet-name>email</servlet-name>
+		<servlet-class>system.email</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>email</servlet-name>
+		<url-pattern>/compose.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet> 
   	<servlet-name>Login</servlet-name>
   	<servlet-class>system.Login</servlet-class>
 	</servlet>
