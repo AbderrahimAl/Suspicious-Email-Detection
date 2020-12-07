@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class EmailRegister
  */
 @WebServlet("/EmailRegister")
-public class email extends HttpServlet {
+public class EmailRegister extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String VUE = "/WEB-INF/compose.jsp"; 
 	public static final String CHAMP_destinataire = "destinataire";
@@ -24,7 +24,7 @@ public class email extends HttpServlet {
     public static final String CHAMP_message = "message";
     public static final String CHAMP_objet = "objet";
 
-    public email() {
+    public EmailRegister() {
         super();
        
     }

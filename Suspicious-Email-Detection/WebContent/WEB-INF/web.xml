@@ -10,13 +10,17 @@
 		<url-pattern>/Register.jsp</url-pattern>
 	</servlet-mapping>
 	<servlet>
-		<servlet-name>email</servlet-name>
-		<servlet-class>system.email</servlet-class>
+	
+	<!-- Email registration starts here :-->
+		<servlet-name>EmailRegister</servlet-name>
+		<servlet-class>system.EmailRegister</servlet-class>
 	</servlet>
 <servlet-mapping>
-		<servlet-name>email</servlet-name>
+		<servlet-name>EmailRegister</servlet-name>
 		<url-pattern>/compose.jsp</url-pattern>
 	</servlet-mapping>
+	<!-- Email registration ends here :-->
+	
 	<servlet> 
   	<servlet-name>Login</servlet-name>
   	<servlet-class>system.Login</servlet-class>
@@ -33,4 +37,5 @@
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login.jsp</url-pattern>
   </servlet-mapping>
+  
 </web-app>
