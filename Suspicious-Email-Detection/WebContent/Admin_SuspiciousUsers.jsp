@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title> Admin Panel</title>
+<title> Suspicious Users</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <style media="all" type="text/css">
 @import "css/AdminPanel.css";  
@@ -13,21 +13,17 @@
 <div id="main">
   <div id="header"> <a href="#" class="logo"><img src="images/img/logo.gif" width="101" height="29" alt="" /></a>
     <ul id="top-navigation">
-      <li class="active"><span><span>Home page</span></span></li>
-      <li ><span><span><a href="/Suspicious-Email-Detection/Admin_SuspiciousUsers.jsp">Suspicious Users</a></span></span></li>
+      <li ><span><span><a href="/Suspicious-Email-Detection/AdminPanel.jsp">Home page</a></span></span></li>
+      <li class="active"><span><span>Suspicious Users</span></span></li>
       <li><span><span><a href="/Suspicious-Email-Detection/Admin_Settings.jsp">Settings</a></span></span></li>
     </ul>
   </div>
   <div id="middle">
-    <div id="left-column" >
-     
-      <strong class="h">INFO</strong>
-      <div class="box">Welcome to Admin Panel </div>
-      
+    <div id="left-column" > 
       </div>
     <div id="center-column">
       <div class="top-bar"> 
-        <h1>Users list</h1>
+        <h1>Suspicious Users list</h1>
         
       </div>
       <br />
