@@ -51,9 +51,9 @@ public class Register extends HttpServlet {
 			String url = "jdbc:mysql://localhost:3306/sysemail?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	    	String utilisateur = "javaEE";
 	    	String motDepasse = "123456789*" ;
-	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDePasse );){
+	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDepasse );){
 	    		Statement statement = connexion.createStatement();
-	    		int result=statement.executeUpdate("INSERT INTO users (email, mot_de_passe, nom) VALUES ("+"'"+email+"'"+","+"'"+motDepasse+"'"+","+"'"+nom+"'"+"); ");
+	    		int result=statement.executeUpdate("INSERT INTO users (email, mot_de_passe, nom) VALUES ("+"'"+email+"'"+","+"'"+motDePasse+"'"+","+"'"+nom+"'"+"); ");
 	    	} catch (SQLException e) {
 				
 			}
