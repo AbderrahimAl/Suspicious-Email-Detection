@@ -91,7 +91,7 @@
       </div>     
     </div>
     <div id="right-column"> 
-      <strong class="h"><a href="/Suspicious-Email-Detection/WEB-INF/Login.jsp">Loge Out</a></strong>
+      <strong class="h"><a href="/Suspicious-Email-Detection/Login.jsp">Logout</a></strong>
     </div>
   </div>   
 </div>
