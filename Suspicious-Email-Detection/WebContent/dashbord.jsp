@@ -14,6 +14,6 @@
 		<a href="inbox.html" target="_self">Boîte de réception</a><br><br>
 		<a href="outbox.html" target="_self">Boîte d'envoi</a><br><br>
 	</section>
-	<img src="messsecure.jpg">
+	<img src="images/messsecure.jpg">
 </body>
 </html>
