@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/compose.css">
 </head>
 <body>
-	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>
+	<a href="/Suspicious-Email-Detection/Login.jsp">Se déconnecter</a>
 	<section>
 		<a href="/Suspicious-Email-Detection/compose.jsp" target="_self">Composer un E-mail</a><br><br>
 		<a href="/Suspicious-Email-Detection/inbox.jsp" target="_self">Boîte de réception</a><br><br>
