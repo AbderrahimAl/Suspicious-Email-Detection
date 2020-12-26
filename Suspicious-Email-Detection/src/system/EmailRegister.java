@@ -51,7 +51,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 	    	String motDepasse = "2ru9Hahawk" ;
 	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDepasse );){
 	    		Statement statement = connexion.createStatement();
-	    		int result=statement.executeUpdate("INSERT INTO mailing (destinataire, expéditeur, objet,message) VALUES ("+"'"+destinataire+"'"+","+"'"+expéditeur+"'"+","+"'"+objet+"'"+","+"'"+message+"'"+"); ");
+	    		int result=statement.executeUpdate("INSERT INTO usersdatabase.mailing (destinataire, expéditeur, objet,message) VALUES ("+"'"+destinataire+"'"+","+"'"+expéditeur+"'"+","+"'"+objet+"'"+","+"'"+message+"'"+"); ");
 	    	} catch (SQLException e) {
 				
 			}

@@ -10,7 +10,7 @@
 	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>
 	<h2 id="secure">Bienvenue dans la messagerie sécurisée</h2>
 	<section>
-		<a href="/Suspicious-Email-Detection/compose.jsp" target="_self">Composer un E-mail</a><br><br>
+		<a href="/Suspicious-Email-Detection/EmailRegister.jsp" target="_self">Composer un E-mail</a><br><br>
 		<a href="/Suspicious-Email-Detection/inbox.jsp" target="_self">Boîte de réception</a><br><br>
 		<a href="/Suspicious-Email-Detection/outbox.jsp" target="_self">Boîte d'envoi</a><br><br>
 	</section>
