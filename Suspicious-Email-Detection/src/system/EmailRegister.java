@@ -46,9 +46,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 				
 			}
 			
-			String url = "jdbc:mysql://localhost:3306/usersdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	    	String utilisateur = "root";
-	    	String motDepasse = "lahsenlahsen" ;
+			String url = "jdbc:mysql://sql305.epizy.com/epiz_27548621_usersdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	    	String utilisateur = "epiz_27548621";
+	    	String motDepasse = "2ru9Hahawk" ;
 	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDepasse );){
 	    		Statement statement = connexion.createStatement();
 	    		int result=statement.executeUpdate("INSERT INTO mailing (destinataire, expéditeur, objet,message) VALUES ("+"'"+destinataire+"'"+","+"'"+expéditeur+"'"+","+"'"+objet+"'"+","+"'"+message+"'"+"); ");
