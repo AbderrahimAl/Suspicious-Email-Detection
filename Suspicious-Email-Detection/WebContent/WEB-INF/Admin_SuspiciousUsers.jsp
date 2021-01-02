@@ -40,8 +40,8 @@
           <tr>
             <th></th>
             <th>User Name</th>
-            <th class="first" width="177">User Email</th>           
-            <th>Contact</th>           
+            <th class="first" width="177">Suspicious E-mail</th>           
+            <th>Accept Email</th>           
             
             <th class="last">Block</th>
           </tr>
@@ -49,7 +49,8 @@
           <tr class="bg">
             <td><img src="images/img/login-icon.gif" width="16" height="16" alt="login" /></td>
             <td class="first style2"> Name 0 </td>
-            <td class="first style2"> Email 0 </td>
+            <td class="first style2"> E-mail 0 blbalabalabalasblllblalalbbalbalallalal
+            bllablalalbalabalblabalblabal </td>
             <td><img src="images/img/edit-icon.gif" width="16" height="16" alt="edit" /></td>            
             
             <td class="last"><img src="images/img/hr.gif" width="16" height="16" alt="" /></td>
@@ -57,28 +58,28 @@
           <tr>
             <td><img src="images/img/login-icon.gif" width="16" height="16" alt="login" /></td>
             <td class="first style2">Name 1 </td>
-            <td class="first style2"> Email 1 </td>            
+            <td class="first style2"> E-mail 1 </td>            
             <td><img src="images/img/edit-icon.gif" width="16" height="16" alt="edit" /></td>            
             <td class="last"><img src="images/img/hr.gif" width="16" height="16" alt="" /></td>
           </tr>
           <tr class="bg">
             <td><img src="images/img/login-icon.gif" width="16" height="16" alt="login" /></td>
             <td class="first style2">Name 2 </td>
-            <td class="first style2"> Email 2</td>           
+            <td class="first style2"> E-mail 2</td>           
             <td><img src="images/img/edit-icon.gif" width="16" height="16" alt="edit" /></td>                        
             <td class="last"><img src="images/img/hr.gif" width="16" height="16" alt="" /></td>
           </tr>
           <tr>
             <td><img src="images/img/login-icon.gif" width="16" height="16" alt="login" /></td>
             <td class="first style2">Name 3 </td>
-            <td class="first style2"> Email 3</td>
+            <td class="first style2"> E-mail 3</td>
             <td><img src="images/img/edit-icon.gif" width="16" height="16" alt="edit" /></td>            
             <td class="last"><img src="images/img/hr.gif" width="16" height="16" alt="" /></td>
           </tr>
           <tr class="bg">
             <td><img src="images/img/login-icon.gif" width="16" height="16" alt="login" /></td>
             <td class="first style2">Name 4</td>
-            <td class="first style2"> Email 4 </td>
+            <td class="first style2"> E-mail 4 </td>
             <td><img src="images/img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
             <td class="last"><img src="images/img/hr.gif" width="16" height="16" alt="" /></td>
           </tr>
