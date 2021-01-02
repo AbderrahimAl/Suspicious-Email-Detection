@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import SyStem.RegisterUtilisateur;
+import SyStem.Utilisateur;
+
 /**
  * Servlet implementation class Register
  */
@@ -21,9 +24,9 @@ public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String VUE = "/WEB-INF/Register.jsp"; 
 	public static final String CHAMP_EMAIL = "email";
-    public static final String CHAMP_PASS = "motdepasse";
+    public static final String CHAMP_PASS = "pass";
     public static final String CHAMP_CONF = "confirmation";
-    public static final String CHAMP_NOM = "nom";
+    public static final String CHAMP_NOM = "username";
 
     public Register() {
         super();
@@ -38,26 +41,15 @@ public class Register extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		    String email = request.getParameter( CHAMP_EMAIL );
-	        String motDePasse = request.getParameter( CHAMP_PASS );
-	        String confirmation = request.getParameter( CHAMP_CONF );
-	        String nom = request.getParameter( CHAMP_NOM );
-	        try{
-				Class.forName( "com.mysql.cj.jdbc.Driver" );
-			} catch( ClassNotFoundException e) {
-				
-			}
-			
-			String url = "jdbc:mysql://localhost:3306/sysemail?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	    	String utilisateur = "javaEE";
-	    	String motDepasse = "123456789*" ;
-	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDepasse );){
-	    		Statement statement = connexion.createStatement();
-	    		int result=statement.executeUpdate("INSERT INTO users (email, mot_de_passe, nom) VALUES ("+"'"+email+"'"+","+"'"+motDePasse+"'"+","+"'"+nom+"'"+"); ");
-	    	} catch (SQLException e) {
-				
-			}
-		
+		String motDePasse = request.getParameter( CHAMP_PASS );
+        String confirmation = request.getParameter( CHAMP_CONF );
+        String nom = request.getParameter( CHAMP_NOM );
+        System.out.println(nom);
+        System.out.println(motDePasse);
+        String email= request.getParameter( CHAMP_EMAIL );
+		Utilisateur Nv_utili = new Utilisateur(email,motDePasse,nom) ;
+		RegisterUtilisateur enreg=new RegisterUtilisateur(Nv_utili);
+		enreg.utili_bdd(Nv_utili);
 	}
 
 }
