@@ -3,6 +3,7 @@ package system;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -29,13 +30,13 @@ public class Inbox extends HttpServlet {
 
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+		this.getServletContext().getRequestDispatcher( "/WEB-INF/Inbox.jsp" ).forward( request, response );
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 try {
-			 	Connection connexion = DriverManager.getConnection( jdbcURL ,utilisateur, motDepasse );
+			 	Connection conn = DriverManager.getConnection( jdbcURL ,utilisateur, motDepasse );
 
 			 	String sql = "SELECT * FROM usersdatabase.mailing WHERE destinataire = 'User@Email.com'";
 			 
