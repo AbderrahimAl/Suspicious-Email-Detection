@@ -19,9 +19,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Outbox")
 public class Outbox extends HttpServlet {
 	
-	String jdbcURL = "jdbc:mysql://sql305.epizy.com/epiz_27548621_usersdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	String utilisateur = "epiz_27548621";
-	String motDepasse = "2ru9Hahawk" ;
+	String jdbcURL = "jdbc:mysql://127.0.0.1:3306/usersdatabase.mailing?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	String utilisateur = "root";
+	String motDepasse = "lahsenlahsen" ;
 
     public Outbox() {
         super();

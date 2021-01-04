@@ -9,18 +9,39 @@
 		<servlet-name>Register</servlet-name>
 		<url-pattern>/Register.jsp</url-pattern>
 	</servlet-mapping>
-	<servlet>
 	
 	<!-- Email registration starts here :-->
+	<servlet>
 		<servlet-name>EmailRegister</servlet-name>
 		<servlet-class>system.EmailRegister</servlet-class>
 	</servlet>
-<servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>EmailRegister</servlet-name>
-		<url-pattern>/compose.jsp</url-pattern>
+		<url-pattern>/EmailRegister.jsp</url-pattern>
 	</servlet-mapping>
 	<!-- Email registration ends here :-->
 	
+	<!-- Inbox starts here :-->
+	<servlet>
+		<servlet-name>Inbox</servlet-name>
+		<servlet-class>system.Inbox</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Inbox</servlet-name>
+		<url-pattern>/Inbox.jsp</url-pattern>
+	</servlet-mapping>
+	<!-- Inbox ends here :-->
+	
+		<!-- Outbox starts here :-->
+	<servlet>
+		<servlet-name>Outbox</servlet-name>
+		<servlet-class>system.Outbox</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Outbox</servlet-name>
+		<url-pattern>/Outbox.jsp</url-pattern>
+	</servlet-mapping>
+	<!-- Outbox ends here :-->
 	
 	<!-- Admin Panel starts here      : -->
 	<servlet>
