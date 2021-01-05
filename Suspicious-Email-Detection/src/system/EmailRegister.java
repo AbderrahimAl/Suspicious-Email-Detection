@@ -40,13 +40,17 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 	        String expéditeur = request.getParameter( CHAMP_expéditeur );
 	        String message = request.getParameter( CHAMP_message );
 	        String objet = request.getParameter( CHAMP_objet );
+	        
+	        Messages msg=new Messages(message);
+	        boolean check=msg.detectSuspiciousMessage(message);
+	        
 	        try{
 				Class.forName( "com.mysql.cj.jdbc.Driver" );
 			} catch( ClassNotFoundException e) {
 				
 			}
 			
-	    	String url = "jdbc:mysql://127.0.0.1:3306/usersdatabase.mailing?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	    	String url = "jdbc:mysql://localhost:3306/sysemail?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	    	String utilisateur = "root";
 	    	String motDepasse = "lahsenlahsen" ;
 	    	try (Connection connexion = DriverManager.getConnection( url,utilisateur, motDepasse );){
