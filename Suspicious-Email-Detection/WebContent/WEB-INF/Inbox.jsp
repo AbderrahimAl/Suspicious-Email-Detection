@@ -8,6 +8,7 @@
 </head>
 <body>
 	<a href="/Suspicious-Email-Detection/dashbord.jsp">Se déconnecter</a>
+	<h2 id="secure">Bienvenue dans la boite de réception</h2>
 	<section>
 		<a href="/Suspicious-Email-Detection/EmailRegister.jsp" target="_self">Composer un E-mail</a><br><br>
 		<a href="/Suspicious-Email-Detection/Inbox.jsp" target="_self">Boîte de réception</a><br><br>
