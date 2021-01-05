@@ -40,6 +40,10 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 	        String expéditeur = request.getParameter( CHAMP_expéditeur );
 	        String message = request.getParameter( CHAMP_message );
 	        String objet = request.getParameter( CHAMP_objet );
+	        
+	        Messages msg=new Messages(message);
+	        boolean check=msg.detectSuspiciousMessage(message);
+	        
 	        try{
 				Class.forName( "com.mysql.cj.jdbc.Driver" );
 			} catch( ClassNotFoundException e) {
